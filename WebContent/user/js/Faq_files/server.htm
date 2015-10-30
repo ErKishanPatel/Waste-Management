@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>
+<script type="text/javascript">
+	!function(a){function b(a){var b=JSON.parse(a.data);if("SET"==b.method)"[object Array]"===Object.prototype.toString.call(b.value)?localStorage.setItem(b.key,b.value.join(";")):(localStorage.setItem(b.key,JSON.stringify(b.value)),"object"==typeof response&&(b.value.flagNewUserCreate&&(d=b.value.flagNewUserCreate),b.value.ootdtstamp&&(ootdtstamp=b.value.ootdtstamp),b.value.btwofftstamp&&(btwofftstamp=b.value.btwofftstamp)));else{var c=localStorage.getItem(b.key);a.source.postMessage(JSON.stringify({id:b.id,key:b.key,value:c}),a.origin)}}var c=ootdtstamp=btwofftstamp=0,d=1,e="",f=localStorage.getItem("vctxjsoptmzd");if(a.top!=a&&a.postMessage&&a.localStorage&&a.JSON){if(localStorage.getItem("scjs:uuid"))d=0,c=localStorage.getItem("scjs:uuid");else{var g=(new Date).getTime(),h=Math.floor(1e13*Math.random());c=h+""+g,d=1,localStorage.setItem("scjs:uuid",c)}var f=localStorage.getItem("scjs:storage00td");e=JSON.parse(f);try{ootdtstamp=e.ootdtstamp}catch(i){}try{btwofftstamp=e.btwofftstamp}catch(i){}var j={isnewuuid:parseInt(d),ootdtstamp:parseInt(ootdtstamp),btwofftstamp:parseInt(btwofftstamp)};localStorage.setItem("scjs:storage00td",JSON.stringify(j)),a.addEventListener?a.addEventListener("message",b,!1):a.attachEvent&&a.attachEvent("onmessage",b)}}(window);
+</script>
+</body></html>

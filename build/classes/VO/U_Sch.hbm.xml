@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.U_Sch_VO" table="UserSch">
+
+		<id name="scId" type="int" column="scId">
+			<generator class="increment" />
+		</id>
+		
+		
+	<many-to-one name="street" column="street" class="VO.Street_VO"></many-to-one>
+	<many-to-one name="sch" column="time" class="VO.Schedule_VO"></many-to-one>
+ 	</class>
+
+</hibernate-mapping>

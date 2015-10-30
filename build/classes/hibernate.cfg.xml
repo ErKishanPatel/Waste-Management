@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/finaldemo</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password"></property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="show_sql">true</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <!-- Mapping files -->
+
+    <mapping resource="VO/category.hbm.xml"/>
+    <mapping resource="VO/Subcat.hbm.xml"/>
+        <mapping resource="VO/Zone.hbm.xml"/>
+        <mapping resource="VO/Ward.hbm.xml"/>
+         <mapping resource="VO/Area.hbm.xml"/>
+         <mapping resource="VO/Street.hbm.xml"/>
+         <mapping resource="VO/Schedule.hbm.xml"/>
+         <mapping resource="VO/Dust.hbm.xml"/>
+         <mapping resource="VO/road_side_unit.hbm.xml"/> 
+    	<mapping resource="VO/Noti.hbm.xml"/>
+    	<mapping resource="VO/C_Reg.hbm.xml"/>
+  		<mapping resource="VO/login.hbm.xml"/>
+  		<mapping resource="VO/C_Staff_hbm.xml"/>
+  		<mapping resource="VO/C_Assign_Area_hbm.xml"/>
+  		<mapping resource="VO/attachmentMappingVO.hbm.xml"/>
+  		<mapping resource="VO/U_Complaint.hbm.xml"/>
+  		<mapping resource="VO/U_Waste_Info.hbm.xml"/>
+  		<mapping resource="VO/U_Garbage_allocate.hbm.xml"/>
+  		<mapping resource="VO/S_Reg_hbm.xml"/>
+  		<mapping resource="VO/U_Feedback.hbm.xml"/>
+  		<mapping resource="VO/U_Reg.hbm.xml"/>
+  		<mapping resource="VO/U_Progress.hbm.xml"/>
+ 
+
+</session-factory>
+</hibernate-configuration>

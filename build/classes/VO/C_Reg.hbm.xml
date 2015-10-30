@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.C_Reg_VO" table="company">
+
+		<id name="companyId" type="int" column="companyId">
+			 <generator class="increment" />
+		</id>
+
+		<property name="companyName" >
+			<column name="companyName" />
+		</property>
+
+		<property name="ad" >
+			<column name="ad" />
+		</property>
+		
+		<property name="city" >
+			<column name="city" />
+		</property>
+		
+		<property name="pin" type="int">
+			<column name="pin" />
+		</property>
+
+		<property name="c_contact" type="int">
+			<column name="c_contact" />
+		</property>
+		
+		<property name="p_contact" type="int">
+			<column name="p_contact" />
+		</property>
+		
+		<property name="reg_no">
+			<column name="reg_no" />
+		</property>
+		
+		<many-to-one name="login" column="userId" class="VO.LoginVO"></many-to-one>
+		
+			
+ 	</class>
+
+</hibernate-mapping>

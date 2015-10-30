@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.C_Staff_VO" table="C_Staff">
+
+		<id name="staffId" type="int" column="staffId">
+			<generator class="increment" />
+		</id>
+
+		<property name="staffName" >
+			<column name="staffName" />
+		</property>
+
+		<property name="ad" >
+			<column name="ad" />			
+		</property>
+		
+		<property name="city" >
+			<column name="city" />
+		</property>
+		
+		<property name="pin" type="int">
+			<column name="pin" />
+		</property>
+
+		<property name="contact" type="int">
+			<column name="contact" />
+		</property>
+		
+		<property name="reg_no">
+			<column name="reg_no" />
+		</property>
+		
+
+	
+ 	</class>
+
+</hibernate-mapping>

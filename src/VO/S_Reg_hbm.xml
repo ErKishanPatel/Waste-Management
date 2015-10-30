@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="VO.S_Reg_VO" table="govt_staff">
+
+		<id name="govt_staffId" type="int" column="govt_staffId">
+			 <generator class="increment" />
+		</id>
+
+		<property name="deptName" >
+			<column name="deptName" />
+		</property>
+
+			<property name="post" >
+			<column name="post" />
+			</property>
+		
+		<property name="e_name" >
+			<column name="e_name" />
+			</property>
+		
+		<property name="ad" >
+			<column name="ad" />
+		</property>
+		
+		
+		
+		<property name="c_contact" type="long">
+			<column name="c_contact" />
+		</property>
+		
+		<property name="reg_no">
+			<column name="reg_no" />
+		</property>
+		
+		<many-to-one name="login" column="userId" class="VO.LoginVO"></many-to-one>
+		
+			
+ 	</class>
+
+</hibernate-mapping>
